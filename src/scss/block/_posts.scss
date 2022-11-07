@@ -1,0 +1,124 @@
+.posts {
+   padding-bottom: 180px;
+   &__cover {
+      display: block;
+      border-radius: 4px;
+      margin-top: -80px;
+      margin-bottom: 80px;
+      width: 100%;
+      object-fit: contain;
+   }
+
+   &__wrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 810px;
+      display: flex;
+      flex-direction: column;
+      color: var(--color-gray);
+   }
+
+   &__content {
+      margin-bottom: 60px;
+      h2 {
+         margin: 0;
+         margin-bottom: 25px;
+         font-weight: 700;
+         @include fs-lh(20px, 30px);
+         color: var(--color-ebony);
+      }
+
+      h3 {
+         margin: 0;
+         margin-bottom: 25px;
+         font-weight: 700;
+         @include fs-lh(18px, 30px);
+         color: var(--color-ebony);
+      }
+
+      p {
+         display: block;
+         margin: 0;
+         margin-bottom: 25px;
+         @include fs-lh(16px, 26px);
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+      blockquote {
+         display: flex;
+         margin: 0;
+         padding: 25px 0 50px;
+         font-weight: 700;
+         @include fs-lh(20px, 30px);
+         color: var(--color-ebony);
+
+         &::before {
+            content: '';
+            flex: none;
+            width: 28px;
+            height: 20px;
+            margin-right: 30px;
+            background-image: url('@img/braces.svg');
+            @include bg-cover;
+         }
+      }
+
+      ul {
+         display: flex;
+         flex-direction: column;
+         @include fs-lh(16px, 26px);
+         margin-bottom: 23px;
+
+         li {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+               margin-bottom: 3px;
+            }
+
+            &::before {
+               content: '';
+               flex: none;
+               width: 16px;
+               height: 16px;
+               margin-right: 16px;
+               background-image: url('@img/check-list.svg');
+               @include bg-cover;
+            }
+         }
+      }
+   }
+
+   &__share {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      @include fs-lh(16px, 26px);
+      color: var(--color-ebony);
+      margin-bottom: 75px;
+
+      span {
+         margin-right: 12px;
+      }
+
+      svg {
+         fill: var(--color-storm);
+         opacity: 1;
+      }
+   }
+
+   &__social {
+   }
+}
+
+.social {
+   &__item {
+   }
+
+   &__link {
+   }
+}

@@ -1,0 +1,85 @@
+.testimonials {
+   background-color: var(--color-athens);
+
+   &--index {
+      padding-top: 97px;
+   }
+
+   &--work {
+      padding-top: 81px;
+   }
+
+   &__container {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 30px;
+      justify-content: space-between;
+   }
+
+   &__content {
+      max-width: 612px;
+   }
+
+   &__title {
+      margin-bottom: 60px;
+      text-align: left;
+   }
+
+   &__items {
+      position: relative;
+      padding-bottom: 12px;
+   }
+
+   &__slider-nav {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+
+   &__image {
+      max-width: 495px;
+      position: relative;
+      z-index: 5;
+      margin-bottom: -60px;
+   }
+}
+
+.testimonials-item {
+   &__image {
+      overflow: hidden;
+      margin-bottom: 24px;
+      border-radius: 100%;
+      width: 72px;
+      height: 72px;
+
+      img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__descr {
+      margin: 0;
+      margin-bottom: 24px;
+      @include fs-lh(16px, 26px);
+      color: var(--color-gray);
+   }
+
+   &__author {
+      display: block;
+      margin-bottom: 4px;
+      padding-right: 110px;
+      font-weight: 700;
+      @include fs-lh(16px, 26px);
+      color: var(--color-ebony);
+   }
+
+   &__author-position {
+      display: block;
+      padding-right: 110px;
+      @include fs-lh(14px, 21px);
+      color: var(--color-storm);
+   }
+}

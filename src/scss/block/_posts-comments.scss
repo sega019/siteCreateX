@@ -1,0 +1,106 @@
+.comments {
+   margin-bottom: 120px;
+   &__title {
+      margin-bottom: 60px;
+      text-align: center;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+   }
+}
+
+.comment {
+   display: flex;
+   align-items: flex-start;
+
+   &__left {
+      margin-right: 30px;
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      max-width: 150px;
+      width: 150px;
+   }
+
+   &__title-author {
+      margin: 0;
+      margin-bottom: 8px;
+      font-weight: 700;
+      @include fs-lh(18px, 27px);
+      color: var(--color-ebony);
+   }
+
+   &__time {
+      @include fs-lh(14px, 21px);
+      color: var(--color-storm);
+   }
+
+   &__right {
+      @include fs-lh(16px, 26px);
+      color: var(--color-gray);
+
+      p {
+         margin: 0;
+         margin-bottom: 16px;
+      }
+
+      a {
+         font-weight: 700;
+         @include fs-lh(16px, 26px);
+         color: var(--color-primary);
+         transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+         &:hover {
+            color: var(--color-active);
+         }
+
+         &:active {
+            color: var(--color-active);
+         }
+
+         &:focus-visible {
+            color: var(--color-active);
+         }
+      }
+   }
+
+   &__reply {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      color: var(--color-storm);
+      transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+      svg {
+         margin-right: 8px;
+         width: 16px;
+         height: 16px;
+         fill: currentColor;
+         object-fit: cover;
+      }
+
+      span {
+         @include fs-lh(14px, 21px);
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+
+      &:active {
+         color: var(--color-primary);
+      }
+
+      &:focus-visible {
+         color: var(--color-primary);
+      }
+   }
+}

@@ -1,0 +1,106 @@
+.we-offer {
+   padding-top: 120px;
+   padding-bottom: 120px;
+
+   &__container {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-items: start;
+      gap: var(--grid-gap);
+   }
+
+   &__image {
+      max-width: 705px;
+      width: 100%;
+   }
+
+   &__content {
+      max-width: 420px;
+   }
+
+   &__title {
+      margin-bottom: 60px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      @include fs-lh(46px, 60px);
+   }
+}
+
+.accordion {
+   display: grid;
+   row-gap: 24px;
+
+   &__item {
+      &--active {
+         .accordion__icon {
+            &--minus {
+               visibility: visible;
+               opacity: 1;
+            }
+
+            &--plus {
+               visibility: hidden;
+               opacity: 0;
+            }
+         }
+      }
+   }
+
+   &__btn {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: flex-start;
+      gap: 20px;
+   }
+
+   &__icons {
+      position: relative;
+      margin-top: 10px;
+      width: 24px;
+      height: 24px;
+   }
+
+   &__icon {
+      position: absolute;
+      // top: 0;
+      // left: 0;
+      // bottom: 0;
+      // right: 0;
+      inset: 0;
+      width: 24px;
+      height: 24px;
+      fill: var(--color-primary);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+      &--plus {
+         visibility: visible;
+         opacity: 1;
+      }
+
+      &--minus {
+      }
+   }
+
+   &__heading {
+      text-align: left;
+      font-weight: 700;
+      @include fs-lh(28px, 42px);
+      color: var(--color-ebony);
+   }
+
+   &__panel {
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+   }
+
+   &__descr {
+      margin: 0;
+      padding-left: 42px;
+      padding-top: 12px;
+      @include fs-lh(16px, 26px);
+      color: var(--color-storm);
+   }
+}

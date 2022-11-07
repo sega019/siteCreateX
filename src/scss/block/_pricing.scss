@@ -1,0 +1,133 @@
+.pricing {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #f4f5f7;
+
+  &__decorate {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__subtitle {
+  }
+
+  &__table {
+  }
+}
+.container {
+}
+.title {
+  &--center {
+  }
+}
+.subtitle {
+  &--center {
+  }
+}
+
+.table-wrapper {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  border: 1px solid #e5e8ed;
+  border-collapse: collapse;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: var(--small-shadow);
+  background-color: var(--color-white);
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  &__header {
+  }
+
+  &__row {
+  }
+
+  &__th {
+    padding: 31px 20px 24px 0;
+
+    &:first-child {
+      vertical-align: bottom;
+      padding-left: 24px;
+      font-weight: 700;
+      @include fs-lh(18px, 27px);
+      text-align: left;
+      color: var(--color-ebony);
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2px;
+    font-weight: 700;
+    @include fs-lh(24px, 36px);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-ebony);
+  }
+
+  &__per {
+    font-weight: 700;
+    @include fs-lh(18px, 27px);
+    text-align: center;
+    color: var(--color-storm);
+  }
+
+  &__body {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: #f4f5f7;
+      }
+
+      &:last-child {
+        .table__col {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &__col {
+    vertical-align: middle;
+    padding: 16px 0;
+    padding-right: 10px;
+    @include fs-lh(16px, 26px);
+    text-align: center;
+    color: var(--color-gray);
+
+    .btn {
+      padding: 0 20px;
+      font-weight: 700;
+      @include fs-lh(12px, 36px);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    &:first-child {
+      padding-left: 24px;
+      text-align: left;
+    }
+  }
+
+  &__check {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    background-image: url('@img/table-check.svg');
+    @include bg-cover;
+  }
+
+  &__text {
+    @include fs-lh(16px, 26px);
+    text-align: center;
+    color: var(--color-gray);
+  }
+}

@@ -1,0 +1,83 @@
+// Размер font-size и line-hight
+
+@use 'sass:math';
+
+// Миксины
+
+@import './_mixins/media';
+@import './_mixins/flex';
+@import './_mixins/fs-lh';
+@import './_mixins/breakpoint';
+
+// Подключение библиотек
+
+@import './libs/normalize';
+@import './libs/swiper';
+@import './libs/choices';
+
+// Мои настройки сайта
+
+@import './_config/reset';
+@import './_config/global';
+@import './_config/vars';
+@import './_config/fonts';
+
+// Подключение блоков
+
+// Страница Главная
+
+@import './block/header';
+@import './block/hero';
+@import './block/about-section';
+@import './block/mission';
+@import './block/know-form';
+@import './block/services-section';
+@import './block/portfolio-section';
+@import './block/partners';
+@import './block/testimonials';
+@import './block/facts-news';
+// @import './block/news';
+@import './block/contacts-section';
+@import './block/footer';
+
+// Страница Services-Page
+
+@import './block/_hero-page';
+@import './block/_services-page';
+
+// Страница Services-2
+
+@import './block/we-offer';
+@import './block/how-we-do';
+@import './block/services-benefits';
+@import './block/related-projects';
+@import './block/pricing';
+
+// Страница Work
+
+@import './block/portfolio';
+@import './block/_work-slider';
+@import './block/project-goal';
+@import './block/constructive';
+
+// Страница About
+
+@import './block/statistics';
+@import './block/rezume';
+@import './block/history';
+@import './block/team';
+@import './block/worldwide';
+@import './block/positions-content';
+
+// Страница News
+
+@import './block/categories';
+
+@import './block/posts';
+@import './block/posts-comments';
+@import './block/posts-form';
+
+@import './block/contacts-form';
+@import './block/contacts-info';
+
+@import './block/modal';

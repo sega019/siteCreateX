@@ -1,0 +1,147 @@
+.header {
+   padding-top: 23px;
+   padding-bottom: 21px;
+
+   &--main {
+      background-color: var(--color-white);
+   }
+
+   &--two {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+   }
+
+   &__container {
+      @include flex-all-sb;
+   }
+
+   &__nav {
+      margin-left: -112px;
+
+      @include minidesk {
+         margin-left: 0;
+      }
+   }
+}
+
+.logo {
+   outline-offset: 5px;
+   outline: 2px solid transparent;
+   border-radius: 4px;
+   transition: outline-color 0.2s ease-in-out;
+
+   &:focus-visible {
+      color: var(--color-primary);
+   }
+
+   &:hover {
+      outline-color: var(--color-primary);
+   }
+
+   &:active {
+      color: var(--color-active);
+   }
+
+   @include minidesk {
+      max-width: 100px;
+   }
+}
+
+.nav {
+   &__list {
+      @include flex-v-center;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-right: 40px;
+      }
+   }
+
+   &__link {
+      font-weight: 700;
+      line-height: 26px;
+      color: var(--color-gray);
+      transition: color 0.3s ease-in-out;
+
+      &--active {
+         color: var(--color-active);
+      }
+
+      &:focus-visible {
+         color: var(--color-primary);
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+
+      &:active {
+         color: var(--color-active);
+      }
+   }
+}
+
+.header-contacts {
+   @include flex-v-center;
+
+   &__link {
+      @include flex-column-start;
+      &:not(:last-child) {
+         margin-right: 35px;
+      }
+   }
+}
+.contacts-link {
+   padding-left: 53px;
+   background-position: left center;
+   background-repeat: no-repeat;
+   background-size: 40px;
+
+   @include minidesk {
+      background-size: 35px;
+   }
+
+   &--call {
+      background-image: url('@img/phone.svg');
+   }
+
+   &--mail {
+      background-image: url('@img/mail.svg');
+   }
+
+   &__caption {
+      font-weight: 700;
+      @include fs-lh(14px, 21px);
+      color: var(--color-gray);
+   }
+
+   &__value {
+      @include fs-lh(18px, 27px);
+      color: var(color-ebony);
+      transition: color 0.3s ease-in-out;
+
+      @include minidesk {
+         @include fs-lh(16px, 21px);
+      }
+   }
+
+   &:focus-visible {
+      .contacts-link__value {
+         color: var(--color-primary);
+      }
+   }
+   &:hover {
+      .contacts-link__value {
+         color: var(--color-primary);
+      }
+   }
+
+   &:active {
+      .contacts-link__value {
+         color: var(--color-active);
+      }
+   }
+}

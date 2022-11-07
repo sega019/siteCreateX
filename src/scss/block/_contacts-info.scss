@@ -1,0 +1,126 @@
+.contacts-info {
+  padding-top: 122px;
+  padding-bottom: 119px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    --contacts-gap: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 118px;
+    gap: calc(var(--contacts-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: absolute;
+        right: calc(-1 * var(--contacts-gap));
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-image: url('@img/divider.svg');
+        @include bg-cover;
+      }
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    @include fs-lh(28px, 42px);
+    color: var(--color-ebony);
+  }
+
+  &__address {
+    display: inline-block;
+    margin-bottom: 9px;
+    @include fs-lh(16px, 26px);
+    font-style: normal;
+    color: var(--color-ebony);
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 24px;
+    border-bottom: 1px solid currentColor;
+    font-size: 16px;
+    color: var(--color-primary);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-active);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__element {
+    @include fs-lh(16px, 26px);
+    color: var(--color-storm);
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__value {
+    color: var(--color-ebony);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-active);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
+  }
+
+  &__soc {
+    margin-bottom: 41px;
+  }
+
+  &__social {
+    justify-content: center;
+  }
+}
+
+.social {
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__link {
+    width: 32px;
+    height: 32px;
+
+    svg {
+      fill: var(--color-storm);
+      opacity: 1;
+      transition: fill 0.3s ease-in-out;
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+        fill: var(--color-primary);
+      }
+    }
+  }
+}
