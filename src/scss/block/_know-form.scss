@@ -1,60 +1,60 @@
 .know-form {
-  &__block {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    transform: translateY(93px);
-    padding: 47px 60px;
-    box-shadow: var(--small-shadow);
-    background-color: var(--color-white);
-  }
+   &__block {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      transform: translateY(93px);
+      padding: 47px 60px;
+      box-shadow: var(--small-shadow);
+      background-color: var(--color-white);
+   }
 
-  &__title {
-    margin: 0;
-    margin-bottom: 33px;
-    font-weight: 700;
-    @include fs-lh(28px, 42px);
-    color: var(--color-ebony);
-  }
+   &__title {
+      margin: 0;
+      margin-bottom: 33px;
+      font-weight: 700;
+      @include fs-lh(28px, 42px);
+      color: var(--color-ebony);
+   }
 
-  &__content {
-    display: grid;
-    grid-template-columns:
-      minmax(200px, 260px) minmax(200px, 260px) minmax(300px, 414px)
-      1fr;
-    column-gap: 24px;
-    row-gap: 24px;
-    // display: grid;
-    // grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-    // grid-template-areas:
-    //   ' a a b b '
-    //   ' c c c d ';
-    // gap: 24px;
-  }
+   &__content {
+      display: grid;
+      grid-template-columns:
+         minmax(200px, 260px) minmax(200px, 260px) minmax(300px, 414px)
+         1fr;
+      column-gap: 24px;
+      row-gap: 24px;
+      // display: grid;
+      // grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+      // grid-template-areas:
+      //   ' a a b b '
+      //   ' c c c d ';
+      // gap: 24px;
+   }
 
-  &__field {
-    // &:nth-child(1) {
-    //   grid-area: a;
-    // }
-    // &:nth-child(2) {
-    //   grid-area: b;
-    // }
-    // &:nth-child(3) {
-    //   grid-area: c;
-    // }
-    // &:nth-child(4) {
-    //   grid-area: d;
-    // }
-    span {
-      margin-bottom: 8px;
-    }
-  }
+   &__field {
+      // &:nth-child(1) {
+      //   grid-area: a;
+      // }
+      // &:nth-child(2) {
+      //   grid-area: b;
+      // }
+      // &:nth-child(3) {
+      //   grid-area: c;
+      // }
+      // &:nth-child(4) {
+      //   grid-area: d;
+      // }
+      span {
+         margin-bottom: 8px;
+      }
+   }
 
-  &__btn {
-    font-size: 14px;
-    padding: 13px 31px;
-    justify-self: start;
-    align-self: end;
-  }
+   &__btn {
+      font-size: 14px;
+      padding: 13px 31px;
+      justify-self: start;
+      align-self: end;
+   }
 }

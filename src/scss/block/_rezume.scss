@@ -1,98 +1,98 @@
 .rezume {
-  position: relative;
-  overflow: hidden;
-  padding-top: 140px;
-  padding-bottom: 120px;
-  background-color: var(--color-white);
+   position: relative;
+   overflow: hidden;
+   padding-top: 140px;
+   padding-bottom: 120px;
+   background-color: var(--color-white);
 
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -297px;
-    right: -365px;
-    width: 1024px;
-    height: 825px;
-    background-image: url('@img/achieve-bg-2.png');
-    transform: scale(1, -1) rotate(60deg);
-    opacity: 0.2;
-    @include bg-contain;
-  }
+   &::before {
+      content: '';
+      position: absolute;
+      bottom: -297px;
+      right: -365px;
+      width: 1024px;
+      height: 825px;
+      background-image: url('@img/achieve-bg-2.png');
+      transform: scale(1, -1) rotate(60deg);
+      opacity: 0.2;
+      @include bg-contain;
+   }
 
-  &__content {
-    display: flex;
-    align-items: flex-start;
-  }
+   &__content {
+      display: flex;
+      align-items: flex-start;
+   }
 
-  &__image {
-  }
+   &__image {
+   }
 
-  &__info {
-    position: relative;
-    top: -130px;
-    left: -30px;
-    z-index: 10;
-    flex-shrink: 0;
-    border-radius: 4px;
-    padding: 80px 46px 60px 80px;
-    width: 735px;
-    box-shadow: var(--small-shadow);
-    background-color: var(--color-white);
-  }
+   &__info {
+      position: relative;
+      top: -130px;
+      left: -30px;
+      z-index: 10;
+      flex-shrink: 0;
+      border-radius: 4px;
+      padding: 80px 46px 60px 80px;
+      width: 735px;
+      box-shadow: var(--small-shadow);
+      background-color: var(--color-white);
+   }
 
-  &__quote {
-  }
+   &__quote {
+   }
 }
 
 .quote {
-  margin: 0;
-  &__content {
-    position: relative;
-    padding: 10px 56px;
-    margin-bottom: 30px;
+   margin: 0;
+   &__content {
+      position: relative;
+      padding: 10px 56px;
+      margin-bottom: 30px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: -3px;
-      width: 28px;
-      height: 20px;
-      background-image: url('@img/braces.svg');
-      @include bg-cover;
-    }
-
-    p {
-      margin: 0;
-      font-weight: 700;
-      @include fs-lh(20px, 30px);
-      color: var(--color-ebony);
-
-      &:not(:last-child) {
-        margin-bottom: 30px;
+      &::before {
+         content: '';
+         position: absolute;
+         top: 10px;
+         left: -3px;
+         width: 28px;
+         height: 20px;
+         background-image: url('@img/braces.svg');
+         @include bg-cover;
       }
-    }
-  }
 
-  &__info {
-    display: block;
-    padding: 20px 55px;
-    background-image: url('@img/signature.svg');
-    background-position: right 60px center;
-    background-size: 100px 68px;
-    background-repeat: no-repeat;
-  }
+      p {
+         margin: 0;
+         font-weight: 700;
+         @include fs-lh(20px, 30px);
+         color: var(--color-ebony);
 
-  &__author {
-    margin: 0;
-    margin-bottom: 4px;
-    font-weight: 700;
-    @include fs-lh(16px, 26px);
-    color: var(--color-ebony);
-  }
+         &:not(:last-child) {
+            margin-bottom: 30px;
+         }
+      }
+   }
 
-  &__post {
-    margin: 0;
-    @include fs-lh(14px, 21px);
-    color: var(--color-storm);
-  }
+   &__info {
+      display: block;
+      padding: 20px 55px;
+      background-image: url('@img/signature.svg');
+      background-position: right 60px center;
+      background-size: 100px 68px;
+      background-repeat: no-repeat;
+   }
+
+   &__author {
+      margin: 0;
+      margin-bottom: 4px;
+      font-weight: 700;
+      @include fs-lh(16px, 26px);
+      color: var(--color-ebony);
+   }
+
+   &__post {
+      margin: 0;
+      @include fs-lh(14px, 21px);
+      color: var(--color-storm);
+   }
 }

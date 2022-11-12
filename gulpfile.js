@@ -13,11 +13,11 @@ import { plugins } from './gulp/config/plugins.js'
 // Передаем значения в глобальную переменную
 
 global.app = {
-  isBuild: process.argv.includes('--build'),
-  isDev: !process.argv.includes('--build'),
-  path: path,
-  gulp: gulp,
-  plugins: plugins,
+   isBuild: process.argv.includes('--build'),
+   isDev: !process.argv.includes('--build'),
+   path: path,
+   gulp: gulp,
+   plugins: plugins,
 }
 
 // Импорт задач
@@ -30,10 +30,10 @@ import { scss } from './gulp/tasks/scss.js'
 import { js } from './gulp/tasks/js.js'
 import { images } from './gulp/tasks/images.js'
 import {
-  otfToTtf,
-  ttfToWoff,
-  fontDrag,
-  fontsStyle,
+   otfToTtf,
+   ttfToWoff,
+   fontDrag,
+   fontsStyle,
 } from './gulp/tasks/fonts.js'
 import { sprite } from './gulp/tasks/sprite.js'
 import { zip } from './gulp/tasks/zip.js'
@@ -42,13 +42,13 @@ import { ftp } from './gulp/tasks/ftp.js'
 // Наблюдатель за изменениями в файлах
 
 function watcher() {
-  gulp.watch(path.watch.favicon, favicon)
-  gulp.watch(path.watch.files, copy)
-  gulp.watch(path.watch.html, html)
-  gulp.watch(path.watch.scss, scss)
-  gulp.watch(path.watch.js, js)
-  gulp.watch(path.watch.images, images)
-  gulp.watch(path.watch.sprite, sprite)
+   gulp.watch(path.watch.favicon, favicon)
+   gulp.watch(path.watch.files, copy)
+   gulp.watch(path.watch.html, html)
+   gulp.watch(path.watch.scss, scss)
+   gulp.watch(path.watch.js, js)
+   gulp.watch(path.watch.images, images)
+   gulp.watch(path.watch.sprite, sprite)
 }
 
 // Последовательная обработка шрифтов
@@ -58,9 +58,9 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontDrag, fontsStyle)
 // Основные задачи
 
 const mainTasks = gulp.series(
-  favicon,
-  fonts,
-  gulp.parallel(copy, html, scss, js, images, sprite)
+   favicon,
+   fonts,
+   gulp.parallel(copy, html, scss, js, images, sprite)
 )
 
 // Построение сценариев выполнения задач

@@ -1,70 +1,119 @@
 <section class="contacts">
-  <div class="container contacts__container">
-    <h2 class="title contacts__title">Contact us</h2>
-    <p class="subtitle contacts__subtitle">Please complete the form. Detailed information will help&nbsp;us to&nbsp;make
-      a&nbsp;tuned offer.</p>
-    <div class="contacts__content">
-      <div class="contacts__images-block">
-        <div class="contacts__images"></div>
-      </div>
-      <form action="#" class="form-contacts">
-        <div class="form-contacts__block">
-          <label class="field field-large">
-            <span class="field__caption">Name*</span>
-            <input type="email" name="name" required placeholder="Your name">
-          </label>
-          <label class="select select-large"><span>I am interested in</span>
-            <select class="choice">
-              <option value="interior-design">Interior Design</option>
-              <option value="construction">Construction</option>
-              <option value="project-development">Project Development</option>
-              <option value="repairs">Repairs</option>
-            </select>
-          </label>
-          <label class="field field-large">
-            <span class="field__caption">Phone*</span>
-            <input type="tel" name="phone" required placeholder="Your phone number">
-          </label>
-          <label class="select select-large"><span>Location*</span>
-            <select class="choice">
-              <option value="interior-design">New Jork</option>
-              <option value="construction">New Jersey</option>
-              <option value="project-development">San Fravcisco</option>
-            </select>
-          </label>
-          <label class="field field-large">
-            <span class="field__caption">Email</span>
-            <input type="email" name="email" placeholder="Your working email">
-          </label>
-          <fieldset class="radio-block">
-            <legend class="radio__title">Preferred contact method</legend>
-            <div class="radio__inputs">
-              <label class="radio" tabindex="0">
-                <input class="vhidden" type="radio" name="contact-method" value="phone" checked=""
-                  tabindex="-1"><span>Phone</span>
-              </label>
-              <label class="radio" tabindex="0">
-                <input class="vhidden" type="radio" name="contact-method" value="email" tabindex="-1"><span>Email</span>
-              </label>
-              <label class="radio" tabindex="0">
-                <input class="vhidden" type="radio" name="contact-method" value="viber" tabindex="-1"><span>Viber</span>
-              </label>
+   <div class="container contacts__container">
+      <h2 class="title contacts__title">Contact us</h2>
+      <p class="subtitle contacts__subtitle">
+         Please complete the form. Detailed information will help&nbsp;us
+         to&nbsp;make a&nbsp;tuned offer.
+      </p>
+      <div class="contacts__content">
+         <div class="contacts__images-block">
+            <div class="contacts__images"></div>
+         </div>
+         <form action="#" class="form-contacts">
+            <div class="form-contacts__block">
+               <label class="field field-large">
+                  <span class="field__caption">Name*</span>
+                  <input
+                     type="email"
+                     name="name"
+                     required
+                     placeholder="Your name"
+                  />
+               </label>
+               <label class="select select-large"
+                  ><span>I am interested in</span>
+                  <select class="choice">
+                     <option value="interior-design">Interior Design</option>
+                     <option value="construction">Construction</option>
+                     <option value="project-development">
+                        Project Development
+                     </option>
+                     <option value="repairs">Repairs</option>
+                  </select>
+               </label>
+               <label class="field field-large">
+                  <span class="field__caption">Phone*</span>
+                  <input
+                     type="tel"
+                     name="phone"
+                     required
+                     placeholder="Your phone number"
+                  />
+               </label>
+               <label class="select select-large"
+                  ><span>Location*</span>
+                  <select class="choice">
+                     <option value="interior-design">New Jork</option>
+                     <option value="construction">New Jersey</option>
+                     <option value="project-development">San Fravcisco</option>
+                  </select>
+               </label>
+               <label class="field field-large">
+                  <span class="field__caption">Email</span>
+                  <input
+                     type="email"
+                     name="email"
+                     placeholder="Your working email"
+                  />
+               </label>
+               <fieldset class="radio-block">
+                  <legend class="radio__title">Preferred contact method</legend>
+                  <div class="radio__inputs">
+                     <label class="radio" tabindex="0">
+                        <input
+                           class="vhidden"
+                           type="radio"
+                           name="contact-method"
+                           value="phone"
+                           checked=""
+                           tabindex="-1"
+                        /><span>Phone</span>
+                     </label>
+                     <label class="radio" tabindex="0">
+                        <input
+                           class="vhidden"
+                           type="radio"
+                           name="contact-method"
+                           value="email"
+                           tabindex="-1"
+                        /><span>Email</span>
+                     </label>
+                     <label class="radio" tabindex="0">
+                        <input
+                           class="vhidden"
+                           type="radio"
+                           name="contact-method"
+                           value="viber"
+                           tabindex="-1"
+                        /><span>Viber</span>
+                     </label>
+                  </div>
+               </fieldset>
+               <label class="field field-large form-contacts__field">
+                  <span class="field__caption">Message*</span>
+                  <textarea
+                     rows="4"
+                     name="message"
+                     placeholder="Your message"
+                  ></textarea>
+               </label>
             </div>
-          </fieldset>
-          <label class="field field-large form-contacts__field">
-            <span class="field__caption">Message*</span>
-            <textarea rows="4" name="message" placeholder="Your message"></textarea>
-          </label>
-        </div>
-        <div class="contacts-form__checkbox-btn">
-          <label class="checkbox contacts-form__checkbox">
-            <input class="vhidden" type="checkbox">
-            <span>I agree to receive communications from Createx Construction
-              Bureau.</span>
-          </label>
-          <button class="btn btn-solid-orange contacts-form__btn" type="submit">Send Request</button>
-        </div>
-      </form>
-    </div>
-  </div>
+            <div class="contacts-form__checkbox-btn">
+               <label class="checkbox contacts-form__checkbox">
+                  <input class="vhidden" type="checkbox" />
+                  <span
+                     >I agree to receive communications from Createx
+                     Construction Bureau.</span
+                  >
+               </label>
+               <button
+                  class="btn btn-solid-orange contacts-form__btn"
+                  type="submit"
+               >
+                  Send Request
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
 </section>

@@ -1,107 +1,162 @@
 <div class="modal">
-  <div class="modal__container">
-    <div class="modal__content" data-modal="subscribe">
-      <button class="modal__close" type="button">
-        <svg class="modal__close-icon">
-          <use xlink:href="@img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-      <div class="positions-modal">
-        <h2 class="positions-modal__title">Subscribe to our newsletter</h2>
-        <form class="positions-modal__form">
-          <div class="positions-modal__field-block">
-            <label class="field field-default"><span>Name*</span>
-              <input type="text" placeholder="Your name" required>
-            </label>
-            <label class="field field-default"><span>Email*</span>
-              <input type="email" placeholder="Your working email" required>
-            </label>
-          </div>
-          <button class="btn btn-solid-orange positions-modal__btn" type="submit">Send</button>
-        </form>
+   <div class="modal__container">
+      <div class="modal__content" data-modal="subscribe">
+         <button class="modal__close" type="button">
+            <svg class="modal__close-icon">
+               <use xlink:href="@img/sprite.svg#cross"></use>
+            </svg>
+         </button>
+         <div class="positions-modal">
+            <h2 class="positions-modal__title">Subscribe to our newsletter</h2>
+            <form class="positions-modal__form">
+               <div class="positions-modal__field-block">
+                  <label class="field field-default"
+                     ><span>Name*</span>
+                     <input type="text" placeholder="Your name" required />
+                  </label>
+                  <label class="field field-default"
+                     ><span>Email*</span>
+                     <input
+                        type="email"
+                        placeholder="Your working email"
+                        required
+                     />
+                  </label>
+               </div>
+               <button
+                  class="btn btn-solid-orange positions-modal__btn"
+                  type="submit"
+               >
+                  Send
+               </button>
+            </form>
+         </div>
       </div>
-    </div>
-    <div class="modal__content" data-modal="cv">
-      <button class="modal__close" type="button">
-        <svg class="modal__close-icon">
-          <use xlink:href="img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-      <div class="positions-modal">
-        <h2 class="positions-modal__title">Send your CV</h2>
-        <form class="positions-modal__form">
-          <div class="positions-modal__field-block">
-            <label class="field field-default"><span>Name*</span>
-              <input type="text" placeholder="Your name" required>
-            </label>
-            <label class="select select-default"><span>Location*</span>
-              <select class="choice">
-                <option value="">Choose your location</option>
-                <option value="new-york">New York</option>
-                <option value="new-jersey">New Jersey</option>
-                <option value="san-francisco">San Francisco</option>
-              </select>
-            </label>
-            <label class="field field-default"><span>Phone*</span>
-              <input type="tel" placeholder="Your phone number" required>
-            </label>
-            <label class="field field-default"><span>Email*</span>
-              <input type="email" placeholder="Your working email" required>
-            </label>
-            <label class="field field-default"><span>Сovering letter*</span>
-              <textarea rows="3" placeholder="Your covering letter" required></textarea>
-            </label>
-            <label class="attach positions-modal__attach">
-              <input class="vhidden" type="file" accept="image/*">
-              <svg>
-                <use xlink:href="@img/sprite.svg#attach"></use>
-              </svg><span>Attach your CV*</span>
-            </label>
-          </div>
-          <button class="btn btn-solid-orange positions-modal__btn" type="submit">Send</button>
-        </form>
+      <div class="modal__content" data-modal="cv">
+         <button class="modal__close" type="button">
+            <svg class="modal__close-icon">
+               <use xlink:href="img/sprite.svg#cross"></use>
+            </svg>
+         </button>
+         <div class="positions-modal">
+            <h2 class="positions-modal__title">Send your CV</h2>
+            <form class="positions-modal__form">
+               <div class="positions-modal__field-block">
+                  <label class="field field-default"
+                     ><span>Name*</span>
+                     <input type="text" placeholder="Your name" required />
+                  </label>
+                  <label class="select select-default"
+                     ><span>Location*</span>
+                     <select class="choice">
+                        <option value="">Choose your location</option>
+                        <option value="new-york">New York</option>
+                        <option value="new-jersey">New Jersey</option>
+                        <option value="san-francisco">San Francisco</option>
+                     </select>
+                  </label>
+                  <label class="field field-default"
+                     ><span>Phone*</span>
+                     <input
+                        type="tel"
+                        placeholder="Your phone number"
+                        required
+                     />
+                  </label>
+                  <label class="field field-default"
+                     ><span>Email*</span>
+                     <input
+                        type="email"
+                        placeholder="Your working email"
+                        required
+                     />
+                  </label>
+                  <label class="field field-default"
+                     ><span>Сovering letter*</span>
+                     <textarea
+                        rows="3"
+                        placeholder="Your covering letter"
+                        required
+                     ></textarea>
+                  </label>
+                  <label class="attach positions-modal__attach">
+                     <input class="vhidden" type="file" accept="image/*" />
+                     <svg>
+                        <use xlink:href="@img/sprite.svg#attach"></use></svg
+                     ><span>Attach your CV*</span>
+                  </label>
+               </div>
+               <button
+                  class="btn btn-solid-orange positions-modal__btn"
+                  type="submit"
+               >
+                  Send
+               </button>
+            </form>
+         </div>
       </div>
-    </div>
-    <div class="modal__content" data-modal="vacancy">
-      <button class="modal__close" type="button">
-        <svg class="modal__close-icon">
-          <use xlink:href="@img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-      <div class="positions-modal positions-modal">
-        <h2 class="positions-modal__title">Send your CV</h2>
-        <form class="positions-modal__form">
-          <div class="positions-modal__field-block">
-            <label class="field field-default"><span>Name*</span>
-              <input type="text" placeholder="Your name" required>
-            </label>
-            <label class="select select-default"><span>Location*</span>
-              <select class="choice">
-                <option value="">Choose your location</option>
-                <option value="new-york">New York</option>
-                <option value="new-jersey">New Jersey</option>
-                <option value="san-francisco">San Francisco</option>
-              </select>
-            </label>
-            <label class="field field-default"><span>Phone*</span>
-              <input type="tel" placeholder="Your phone number" required>
-            </label>
-            <label class="field field-default"><span>Email*</span>
-              <input type="email" placeholder="Your working email" required>
-            </label>
-            <label class="field field-default"><span>Сovering letter*</span>
-              <textarea rows="3" placeholder="Your covering letter" required></textarea>
-            </label>
-            <label class="attach positions-modal__attach">
-              <input class="vhidden" type="file" accept="image/*">
-              <svg>
-                <use xlink:href="@img/sprite.svg#attach"></use>
-              </svg><span>Attach your CV*</span>
-            </label>
-          </div>
-          <button class="btn btn-solid-orange positions-modal__btn" type="submit">Send</button>
-        </form>
+      <div class="modal__content" data-modal="vacancy">
+         <button class="modal__close" type="button">
+            <svg class="modal__close-icon">
+               <use xlink:href="@img/sprite.svg#cross"></use>
+            </svg>
+         </button>
+         <div class="positions-modal positions-modal">
+            <h2 class="positions-modal__title">Send your CV</h2>
+            <form class="positions-modal__form">
+               <div class="positions-modal__field-block">
+                  <label class="field field-default"
+                     ><span>Name*</span>
+                     <input type="text" placeholder="Your name" required />
+                  </label>
+                  <label class="select select-default"
+                     ><span>Location*</span>
+                     <select class="choice">
+                        <option value="">Choose your location</option>
+                        <option value="new-york">New York</option>
+                        <option value="new-jersey">New Jersey</option>
+                        <option value="san-francisco">San Francisco</option>
+                     </select>
+                  </label>
+                  <label class="field field-default"
+                     ><span>Phone*</span>
+                     <input
+                        type="tel"
+                        placeholder="Your phone number"
+                        required
+                     />
+                  </label>
+                  <label class="field field-default"
+                     ><span>Email*</span>
+                     <input
+                        type="email"
+                        placeholder="Your working email"
+                        required
+                     />
+                  </label>
+                  <label class="field field-default"
+                     ><span>Сovering letter*</span>
+                     <textarea
+                        rows="3"
+                        placeholder="Your covering letter"
+                        required
+                     ></textarea>
+                  </label>
+                  <label class="attach positions-modal__attach">
+                     <input class="vhidden" type="file" accept="image/*" />
+                     <svg>
+                        <use xlink:href="@img/sprite.svg#attach"></use></svg
+                     ><span>Attach your CV*</span>
+                  </label>
+               </div>
+               <button
+                  class="btn btn-solid-orange positions-modal__btn"
+                  type="submit"
+               >
+                  Send
+               </button>
+            </form>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 </div>

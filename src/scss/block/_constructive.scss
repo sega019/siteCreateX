@@ -1,47 +1,47 @@
 .constructive {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color-athens);
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: var(--color-athens);
 
-  &__left {
-    grid-column: 5 span;
+   &__left {
+      grid-column: 5 span;
 
-    img {
-      margin-bottom: -142px;
-    }
-  }
+      img {
+         margin-bottom: -142px;
+      }
+   }
 
-  &__right {
-    grid-column: 7 span;
-    padding-left: 104px;
-  }
+   &__right {
+      grid-column: 7 span;
+      padding-left: 104px;
+   }
 
-  &__title {
-    margin-bottom: 60px;
-  }
+   &__title {
+      margin-bottom: 60px;
+   }
 
-  &__list {
-  }
+   &__list {
+   }
 
-  &__item {
-    position: relative;
-    padding-left: 37px;
-    @include fs-lh(16px, 26px);
-    color: var(--color-gray);
+   &__item {
+      position: relative;
+      padding-left: 37px;
+      @include fs-lh(16px, 26px);
+      color: var(--color-gray);
 
-    &::before {
-      position: absolute;
-      content: '';
-      top: 3px;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      background-image: url('@img/constructive-check.svg');
-      @include bg-cover;
-    }
+      &::before {
+         position: absolute;
+         content: '';
+         top: 3px;
+         left: 0;
+         width: 20px;
+         height: 20px;
+         background-image: url('@img/constructive-check.svg');
+         @include bg-cover;
+      }
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
 }

@@ -1,69 +1,69 @@
 .how-we-do {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  &__title {
-    margin-bottom: 48px;
-  }
+   padding-top: 60px;
+   padding-bottom: 120px;
+   &__title {
+      margin-bottom: 48px;
+   }
 
-  &__list {
-    // @include reset-list;
-    counter-reset: section;
-  }
+   &__list {
+      // @include reset-list;
+      counter-reset: section;
+   }
 
-  &__item {
-    grid-column: 3 span;
-    counter-increment: section;
-    cursor: pointer;
+   &__item {
+      grid-column: 3 span;
+      counter-increment: section;
+      cursor: pointer;
 
-    &:hover {
-      .how-we-do__counter::before {
-        color: #ff5a30;
-        background-color: rgba(255, 90, 48, 0.12);
-        outline-color: rgba(255, 90, 48, 0.06);
+      &:hover {
+         .how-we-do__counter::before {
+            color: #ff5a30;
+            background-color: rgba(255, 90, 48, 0.12);
+            outline-color: rgba(255, 90, 48, 0.06);
+         }
       }
-    }
-  }
+   }
 
-  &__counter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3px;
-    margin-left: -16px;
+   &__counter {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3px;
+      margin-left: -16px;
 
-    &::before {
-      content: '0' counter(section);
+      &::before {
+         content: '0' counter(section);
+         font-weight: 700;
+         @include fs-lh(46px, 60px);
+         color: #d7dadd;
+         margin-right: 8px;
+         padding: 12px 15px;
+         outline: 16px solid transparent;
+         border-radius: 50%;
+         transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+            outline-color 0.2s ease-in;
+      }
+
+      &:not(:last-child) {
+         &::after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            border-bottom: 1px dashed #d7dadd;
+         }
+      }
+   }
+
+   &__subtitle {
+      margin: 0;
+      margin-bottom: 10px;
       font-weight: 700;
-      @include fs-lh(46px, 60px);
-      color: #d7dadd;
-      margin-right: 8px;
-      padding: 12px 15px;
-      outline: 16px solid transparent;
-      border-radius: 50%;
-      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-        outline-color 0.2s ease-in;
-    }
+      @include fs-lh(20px, 30px);
+      color: var(--color-ebony);
+   }
 
-    &:not(:last-child) {
-      &::after {
-        content: '';
-        height: 1px;
-        width: 100%;
-        border-bottom: 1px dashed #d7dadd;
-      }
-    }
-  }
-
-  &__subtitle {
-    margin: 0;
-    margin-bottom: 10px;
-    font-weight: 700;
-    @include fs-lh(20px, 30px);
-    color: var(--color-ebony);
-  }
-
-  &__descr {
-    margin: 0;
-    @include fs-lh(16px, 26px);
-    color: var(--color-storm);
-  }
+   &__descr {
+      margin: 0;
+      @include fs-lh(16px, 26px);
+      color: var(--color-storm);
+   }
 }

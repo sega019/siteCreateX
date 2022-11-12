@@ -1,15 +1,14 @@
 // Медиа-выражение
 @mixin media($width) {
-  @media(min-width: $width) {
-    @content;
-  }
+   @media (min-width: $width) {
+      @content;
+   }
 }
-
 
 // Контрольная точка
 @mixin bp($name) {
-  $width: map-get($breakpoints, $name);
-  @include media($width) {
-    @content;
-  }
+   $width: map-get($breakpoints, $name);
+   @include media($width) {
+      @content;
+   }
 }

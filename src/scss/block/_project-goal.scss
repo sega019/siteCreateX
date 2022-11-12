@@ -1,60 +1,60 @@
 .project-goal {
-  padding-top: 30px;
-  padding-bottom: 120px;
+   padding-top: 30px;
+   padding-bottom: 120px;
 
-  &__left {
-    padding-top: 24px;
-    grid-column: span 6;
-  }
+   &__left {
+      padding-top: 24px;
+      grid-column: span 6;
+   }
 
-  &__title {
-    margin-bottom: 41px;
-  }
+   &__title {
+      margin-bottom: 41px;
+   }
 
-  &__descr {
-    margin: 0;
-    margin-bottom: 27px;
-    @include fs-lh(18px, 27px);
-    color: var(--color-gray);
-  }
+   &__descr {
+      margin: 0;
+      margin-bottom: 27px;
+      @include fs-lh(18px, 27px);
+      color: var(--color-gray);
+   }
 
-  &__right {
-    display: flex;
-    justify-content: flex-end;
-    grid-column: span 6;
-  }
+   &__right {
+      display: flex;
+      justify-content: flex-end;
+      grid-column: span 6;
+   }
 }
 
 .project-info {
-  border-radius: 4px;
-  padding: 27px 40px 40px 60px;
-  width: 495px;
-  min-height: 303px;
-  box-shadow: var(--small-shadow);
-  background-color: var(--color-white);
+   border-radius: 4px;
+   padding: 27px 40px 40px 60px;
+   width: 495px;
+   min-height: 303px;
+   box-shadow: var(--small-shadow);
+   background-color: var(--color-white);
 
-  &__list {
-    // @include reset-list;
-  }
+   &__list {
+      // @include reset-list;
+   }
 
-  &__item {
-    display: flex;
+   &__item {
+      display: flex;
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+   }
 
-  &__category {
-    width: 130px;
-    font-weight: 700;
-    @include fs-lh(16px, 26px);
-    text-transform: uppercase;
-    color: var(--color-ebony);
-  }
+   &__category {
+      width: 130px;
+      font-weight: 700;
+      @include fs-lh(16px, 26px);
+      text-transform: uppercase;
+      color: var(--color-ebony);
+   }
 
-  &__value {
-    @include fs-lh(16px, 26px);
-    color: var(--color-storm);
-  }
+   &__value {
+      @include fs-lh(16px, 26px);
+      color: var(--color-storm);
+   }
 }

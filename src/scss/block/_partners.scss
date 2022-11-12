@@ -1,76 +1,76 @@
 .partners {
-  &--index {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: var(--color-athens);
-  }
+   &--index {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background-color: var(--color-athens);
+   }
 
-  &--services-2 {
-    padding-top: 80px;
-    padding-bottom: 115px;
-    background-color: var(--color-athens);
-  }
+   &--services-2 {
+      padding-top: 80px;
+      padding-bottom: 115px;
+      background-color: var(--color-athens);
+   }
 
-  &--work {
-    padding-top: 180px;
-    padding-bottom: 117px;
-    background-color: var(--color-white);
-  }
+   &--work {
+      padding-top: 180px;
+      padding-bottom: 117px;
+      background-color: var(--color-white);
+   }
 
-  &--about {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    .partners__title {
-      margin-bottom: 25px;
-    }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  &__title {
-    margin-bottom: 60px;
-  }
-
-  &__list {
-    width: 100%;
-    display: grid;
-    row-gap: 40px;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 102px;
-  }
-
-  &__item {
-  }
-
-  &__link {
-    &:focus-visible {
-      .partners__logo {
-        filter: grayscale(0);
+   &--about {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      .partners__title {
+         margin-bottom: 25px;
       }
-    }
-    &:hover {
-      .partners__logo {
-        filter: grayscale(0);
-      }
-    }
+   }
 
-    &:active {
-      .partners__logo {
-        filter: grayscale(0);
-      }
-    }
-  }
+   &__container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+   }
 
-  &__logo {
-    width: 100%;
-    height: 64px;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease-in-out;
-  }
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__list {
+      width: 100%;
+      display: grid;
+      row-gap: 40px;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 102px;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      &:focus-visible {
+         .partners__logo {
+            filter: grayscale(0);
+         }
+      }
+      &:hover {
+         .partners__logo {
+            filter: grayscale(0);
+         }
+      }
+
+      &:active {
+         .partners__logo {
+            filter: grayscale(0);
+         }
+      }
+   }
+
+   &__logo {
+      width: 100%;
+      height: 64px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+   }
 }
